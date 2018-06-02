@@ -21,14 +21,14 @@ class TernarySearchTree(object):
     if node == None: # создаем новую ноду
       node = Node(char)
 
-    if char < node.character: #
+    if char < node.character: # меньше => left
       node.leftNode = self.putItem(
         node.leftNode,
         key,
         value,
         index # не повышаем индекс, т.к. левый ребенок и тот же уровень
       )
-    elif char > node.character:
+    elif char > node.character: # больше => right
       node.rightNode = self.putItem(
         node.rightNode,
         key,
