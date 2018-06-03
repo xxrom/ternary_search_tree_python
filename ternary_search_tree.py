@@ -82,8 +82,8 @@ if __name__ == '__main__':
   tst.put('appeturme', 10201)
   tst.put('orange', 200)
 
-  print(tst.get('apple'))
-  print(tst.get('apper'))
-  print(tst.get('orange'))
-  print(tst.get('appeturme'))
-  print(tst.get('appeturmer'))
+  print(tst.get('apple')) # 100
+  print(tst.get('apper')) # 1001
+  print(tst.get('orange')) # 200
+  print(tst.get('appeturme')) # 10201
+  print(tst.get('appeturmer')) # -1
